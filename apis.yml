@@ -1,7 +1,24 @@
 aid: seed-and-spark
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/seed-and-spark.png
 name: Seed&Spark
-description: Seed&Spark is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Seed&Spark is a crowdfunding and streaming platform for independent film and episodic
+  content, combining a project crowdfunding marketplace for filmmakers with a subscription streaming
+  service for independent films and series. Founded in 2012 and backed by Techstars, the company helps
+  independent creators raise funds, build audiences, and distribute their work. It was added to the API
+  Evangelist network as a portfolio-company lead; no public developer API surface was found during
+  enrichment (homepage and app paths sit behind Cloudflare bot protection; no api.* or developers.*
+  subdomain resolves and no well-known API documents are published).
 url: https://raw.githubusercontent.com/api-evangelist/seed-and-spark/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Crowdfunding
+- Film
+- Streaming
+- Entertainment
+- Media
+- Independent Film
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/seed-and-spark-domain-security.yml
+- type: WellKnown
+  url: well-known/seed-and-spark-well-known.yml
 - type: Website
   url: https://seedandspark.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1

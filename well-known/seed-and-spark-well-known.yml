@@ -1,0 +1,24 @@
+generated: '2026-07-21'
+method: probed
+source: live HTTP probes of seedandspark.com well-known paths
+host: seedandspark.com
+entries:
+- path: /.well-known/security.txt
+  status: 404
+  file: null
+- path: /.well-known/openid-configuration
+  status: 404
+  file: null
+- path: /.well-known/oauth-authorization-server
+  status: 404
+  file: null
+- path: /.well-known/api-catalog
+  status: 404
+  file: null
+- path: /.well-known/ai-plugin.json
+  status: 404
+  file: null
+- path: /llms.txt
+  status: 404
+  file: null
+notes: No well-known documents published. Homepage and app paths return 403 (Cloudflare bot protection); robots.txt is 200 (allow-all). No api.* or developers.* subdomain resolves; docs.seedandspark.com responds 403. No public API surface found.
